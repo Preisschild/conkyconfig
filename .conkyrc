@@ -75,10 +75,10 @@ Dateisystem $alignr${fs_type}
 # |--CPU
 #CPU Section
 ${font Liberation Sans:style=Bold:size=14}PROZESSOR $hr${font}
-${font Liberation Sans:style=Bold:size=8}${color}CPU1:  ${font}${color2}${cpu cpu1}%         ${exec sensors | grep 'Core 0' | cut -c17-18}°C ${alignr}${voffset -2}${cpugraph cpu1 8,60 1793d0 ffffff}${color}
-${font Liberation Sans:style=Bold:size=8}${color}CPU2:  ${font}${color2}${cpu cpu2}%         ${exec sensors | grep 'Core 1' | cut -c17-18}°C ${alignr}${voffset -2}${cpugraph cpu2 8,60 1793d0 ffffff}${color}
-${font Liberation Sans:style=Bold:size=8}${color}CPU3:  ${font}${color2}${cpu cpu3}%         ${exec sensors | grep 'Core 2' | cut -c17-18}°C ${alignr}${voffset -2}${cpugraph cpu3 8,60 1793d0 ffffff}${color}
-${font Liberation Sans:style=Bold:size=8}${color}CPU4:  ${font}${color2}${cpu cpu4}%         ${exec sensors | grep 'Core 3' | cut -c17-18}°C ${alignr}${voffset -2}${cpugraph cpu4 8,60 1793d0 ffffff}${color}
+${font Liberation Sans:style=Bold:size=8}${color}CPU1:  ${font}${color2}${cpu cpu1}%${alignc -40}${exec sensors | grep 'Core 0' | cut -c17-18}°C ${alignr}${voffset -2}${cpugraph cpu1 8,60 1793d0 ffffff}${color}
+${font Liberation Sans:style=Bold:size=8}${color}CPU2:  ${font}${color2}${cpu cpu2}%${alignc -40}${exec sensors | grep 'Core 1' | cut -c17-18}°C ${alignr}${voffset -2}${cpugraph cpu2 8,60 1793d0 ffffff}${color}
+${font Liberation Sans:style=Bold:size=8}${color}CPU3:  ${font}${color2}${cpu cpu3}%${alignc -40}${exec sensors | grep 'Core 2' | cut -c17-18}°C ${alignr}${voffset -2}${cpugraph cpu3 8,60 1793d0 ffffff}${color}
+${font Liberation Sans:style=Bold:size=8}${color}CPU4:  ${font}${color2}${cpu cpu4}%${alignc -40}${exec sensors | grep 'Core 3' | cut -c17-18}°C ${alignr}${voffset -2}${cpugraph cpu4 8,60 1793d0 ffffff}${color}
 
 ${voffset 5}
 # |--MEM

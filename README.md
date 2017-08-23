@@ -6,4 +6,4 @@ External IPv4 overpainted because of obvious reasons
 
 Current theme
 
-<img src="http://i.imgur.com/5ZL8LEk.png?1" />
+<img src="http://imgur.com/eM0pJF8" />

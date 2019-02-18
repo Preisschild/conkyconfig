@@ -89,7 +89,7 @@ ${color White}${membar 10, 180}
 # - NETWORK - #
 ###############
 ${font Liberation Sans:bold:size=14}${voffset 10}NETZWERK $hr${font}
-${voffset 6}${font Liberation Sans:bold:size=8}${color}IPv4: ${color white}${execi 10800 curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//'}
+${voffset 6}${font Liberation Sans:bold:size=8}${color}IPv4: ${color white}${execi 10800 curl 'https://api.ipify.org?format=json' -s | jq -r .ip}
 ${color0}${downspeedgraph enp4s0 1793d0 ffffff}${color}
 ${font Liberation Sans:style=Bold:size=8}Download: ${font}${font Liberation Sansd:size=8}${color2}${downspeed enp4s0}${font}${color} ${font Liberation Sans:style=Bold:size=8}$alignr Total: ${font}${color2}${font Liberation Sans:size=8}${totaldown wlp3s0}${font}${color}
 ${color0}${upspeedgraph enp4s0 1793d0 ffffff}
